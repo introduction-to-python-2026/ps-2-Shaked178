@@ -12,6 +12,9 @@ def find_mean(num1, num2, num3):
     return mean
 
 def find_mean_std(num1, num2, num3):
+    n = 3
     mean = find_mean(num1, num2, num3)
-    pass  # Replace 'pass' with code
+    sum_of_squares = (num1 - mean) **2 + (num2 - mean) **2 + (num3 - mean) **2
+    std = (sum_of_squares / n)
+    return mean, std
 
